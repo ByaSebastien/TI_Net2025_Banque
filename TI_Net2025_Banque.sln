@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TI_Net2025_Banque", "TI_Net2025_Banque\TI_Net2025_Banque.csproj", "{16B99D53-6420-4863-B62A-A11F5A6E952E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16B99D53-6420-4863-B62A-A11F5A6E952E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B99D53-6420-4863-B62A-A11F5A6E952E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B99D53-6420-4863-B62A-A11F5A6E952E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B99D53-6420-4863-B62A-A11F5A6E952E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57E47CCC-1F99-4150-A192-70BC5BA1EC81}
+	EndGlobalSection
+EndGlobal
