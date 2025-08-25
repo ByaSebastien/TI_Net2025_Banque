@@ -1,4 +1,6 @@
 ﻿
+using System.Threading.Channels;
+using TI_Net2025_Banque;
 using TI_Net2025_Banque.Models;
 
 Personne albert = new Personne()
@@ -11,17 +13,25 @@ Personne albert = new Personne()
 Personne philippe = new Personne("Le roi","Philippe",new DateTime(1812,2,6));
 
 Courant compteAlbert = new Courant("123",10000,5000,albert);
-compteAlbert.LigneDeCredit = -5000;
 
 Courant comptePhilippe = new Courant("456",20000,10000,philippe);
 
-compteAlbert.Depot(10000);
-comptePhilippe.Retrait(40000);
 
 Banque belfius = new Banque("Belfius");
 
 belfius.AjouterCompte(compteAlbert);
 belfius.AjouterCompte(comptePhilippe);
 
-Console.WriteLine(belfius["123"].Titulaire.Prenom);
+belfius["456"].Retrait(25000);
+
+DemoDelegate demoDelegate = new DemoDelegate();
+
+List<int> ints = new List<int>()
+{
+    1,2,3,4,5,6,7,8,9,
+};
+
+//ints.Where(nb => nb % 2 == 0).ToList().ForEach(Console.WriteLine);
+
+ints.Take(5).Select(nb => nb * 2).ToList().ForEach(Console.WriteLine);
 
